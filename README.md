@@ -10,3 +10,8 @@ digits = [1, 2, 3];
 ```
 [1, 2, 4]
 ```
+The array represents the integer 123. Incrementing by one gives 123 + 1 = 124. Thus, the result should be [1,2,4]. 
+
+## Approach
+1. **Start from last digit:** start from last digit of the array if the last digit less than `9`, increment this digit and return the updated value
+2. if the last digit `9`, set it to `0` and move next digit to left
